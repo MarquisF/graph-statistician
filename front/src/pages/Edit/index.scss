@@ -1,0 +1,80 @@
+.data-list-container {
+  position: relative;
+  flex: 1 1 auto;
+  border-top: 1px solid #ccc;
+
+  ul {
+    padding: 0 0 200px 0;
+    border-right: 1px solid #eee;
+    margin: 0;
+    margin-top: -1px;
+  }
+}
+
+.data-list {
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 2px 2px -3px #ccc inset;
+
+  &:last-child {
+    right: 0
+  }
+}
+
+.vertex-list-container {
+  width: 70%;
+}
+
+.arc-list-container {
+  width: 30%;
+  li {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-bottom: -1px;
+
+    & > a {
+      padding: 0 10px;
+    }
+
+    & > * {
+      min-height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.edit-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  header {
+    flex-shrink: 0;
+  }
+}
+
+.arc-vertex-item {
+  background: #eee;
+  border-radius: 2px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+
+  &:hover {
+    background: #f7f7f7
+  }
+}
+
+.vertex-item {
+  &:focus {
+    background: #e7e7e7
+  }
+}
